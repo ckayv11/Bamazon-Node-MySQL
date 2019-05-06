@@ -14,20 +14,20 @@ CREATE TABLE products (
 );
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ('Sephora Cream Lip Stain Collection Set of 6', 'Beauty & Personal Care', 53.48, 120),
-('Tinted Moisturizer - Nude', 'Beauty & Personal Care', 48.30, 200);
+VALUES ('Sephora Cream Lip Stain Collection Set of 6', 'Beauty & Personal Care', 53.48, 10),
+('Tinted Moisturizer - Nude', 'Beauty & Personal Care', 48.30, 35);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ('Samsung UN65RU7100FXZA Flat 65'' 4K UHD 7 Series Smart TV (2019)', 'Electronics', 697.99, 75),
-('SUPER NINTENDO CLASSIC EDITION CONSOLE Renewed [NINTENDO]', 'Electronics', 129.99, 12);
+VALUES ('Samsung UN65RU7100FXZA Flat 65'' 4K UHD 7 Series Smart TV (2019)', 'Electronics', 697.99, 5),
+('SUPER NINTENDO CLASSIC EDITION CONSOLE Renewed [NINTENDO]', 'Electronics', 129.99, 2);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES ('Shop Succulents Rosette Succulent (Collection of 4)', 'Garden & Outdoor', 18.99, 30),
 ('Adjustable Zero Gravity Lounge Chair Recliners', 'Garden & Outdoor', 74.99, 50);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ('YETI Tundra 75 Cooler', 'Sports & Outdoors', 449.99, 45),
-('Black Diamond Momentum Climbing Harness Package - Womens Medium', 'Sports & Outdoors', 99.95, 175);
+VALUES ('YETI Tundra 75 Cooler', 'Sports & Outdoors', 449.99, 4),
+('Black Diamond Momentum Climbing Harness Package - Womens Medium', 'Sports & Outdoors', 99.95, 15);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES ('FurryFriends Soft Sided Pet Crate Travel Carrier Dogs Cats', 'Pet Supplies', 39.99, 60),
