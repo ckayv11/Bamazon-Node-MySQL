@@ -2,7 +2,7 @@ DROP DATABASE IF EXISTS bamazon;
 
 CREATE DATABASE bamazon;
 
-USE DATABASE bamazon;
+USE bamazon;
 
 CREATE TABLE products (
     id INT(10) NOT NULL AUTO_INCREMENT,
@@ -31,5 +31,6 @@ VALUES ('YETI Tundra 75 Cooler', 'Sports & Outdoors', 449.99, 4),
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES ('FurryFriends Soft Sided Pet Crate Travel Carrier Dogs Cats', 'Pet Supplies', 39.99, 60),
-('Wholesome Pride Pet Treats Sweet Potato Fries Dog Treats', 'Pet Supplies' 16.99, 25);
+('Wholesome Pride Pet Treats Sweet Potato Fries Dog Treats', 'Pet Supplies', 16.99, 25);
 
+SELECT * FROM products;
