@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ckayv11/Bamazon-Node-MySQL/issues"
   },
-  "homepage": "https://github.com/ckayv11/Bamazon-Node-MySQL#readme"
+  "homepage": "https://github.com/ckayv11/Bamazon-Node-MySQL#readme",
+  "dependencies": {
+    "mysql": "^2.17.1"
+  }
 }
