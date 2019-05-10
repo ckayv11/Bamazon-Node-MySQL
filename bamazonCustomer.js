@@ -1,20 +1,12 @@
-// require('dotenv').config();
+require('dotenv').config();
 // const inquirer = require('inquirer');
 const mysql = require('mysql');
-// const connection = mysql.createConnection({
-//     host: process.env.DB_host,
-//     port: process.env.DB_port,
-//     user: process.env.DB_user,
-//     password: process.env.DB_password,
-//     database: process.env.DB_database
-// });
-
 const connection = mysql.createConnection({
-    host: "localhost",
-    port: 3306,
-    user: "root",
-    password: "",
-    database: "bamazon"
+    host: process.env.DB_host,
+    port: process.env.DB_port,
+    user: process.env.DB_user,
+    password: process.env.DB_password,
+    database: process.env.DB_database
 });
 
 // connect to the mysql server and sql database
