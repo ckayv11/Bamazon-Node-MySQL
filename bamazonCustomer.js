@@ -55,5 +55,31 @@ function selectProduct() {
           }
       }
     ])
-
+    .then(function(answer) {
+        connection.query(`SELECT * FROM products WHERE id = ${answer.productID}`, function(err, res) {
+            if (err) throw err;
+            let selectQty = answer.quantity;
+            let productName = res[0].product_name;
+            let purchaseCost = selectQty * res[0].price;
+                if (selectQty <= res[0].stock_quantity) {
+                    let remainingQty = res[0].stock_quantity - answer.quantity;
+                    connection.query(`UPDATE products SET ? WHERE ?`,
+                    [
+                      {
+                          stock_quantity: remainingQty
+                      },
+                      {
+                          id: answer.productID
+                      }
+                    ],
+                    function(err, res) {
+                        if (err) throw err;
+                        console.log(`You purchased ${selectQty} of ${productName} and your total cost was $${purchaseCost}. Thank you for shopping at Bamazon!`);
+                    });
+                } else if (selectQty > res[0].stock_quantity) {
+                    console.log('Insufficient quantity! Please select a different product or quantity.')
+                    selectProduct();
+                };
+        });
+    });
 };
