@@ -21,8 +21,26 @@ Bamazon is an Amazon-like storefront using MySQL & Node. The app will take in or
 
 ## Visual for app ##
 
-Images coming
+Welcome screen with products and prompt
 
+![display products screen](images/display_screen.png)
+
+Screen validating input
+
+![validate ID screen](images/validate_example.png)
+![validate ID screen2](images/validate_id.png)
+![validate ID screen3](images/validate_example2.png)
+
+Successful purchase screen
+
+![successful purchase screen](images/successful_screen.png)
+
+If store does not have enough quantity of product for purchase, the app lets the customer know to choose another product or quantity.
+
+![insufficient screen](images/insufficient_screen1.png)
+
+App effectively completes the updated request.
+![insufficient screen2](images/insufficient_screen2.png)
 
 
 ### Thanks for visiting and enjoy the app! ###
